@@ -7,7 +7,6 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import dto.Pet;
 import dto.Pets;
-import dto.getEmployeesDTO.GetEmployeesDTO;
 import org.junit.Assert;
 import support.MyConfig;
 import support.SupportFunctions;
