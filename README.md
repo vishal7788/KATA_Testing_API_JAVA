@@ -39,6 +39,8 @@ Create BDD scenarios and execute them successfully for the following situations:
 * Add a new pet (Attention points: in order to have the correct information in the request body you need to first GET the owners details + GET a pet's category(id + name). Visits information are not mandatory, but the visits:[] Array needs to be in the request body)
 * Using scenario outline, create a vet for each of the specialities (the id of the speciality is required)
 
+You can open the project in either IntelliJ or Eclipse and run the scenarios from `RunnerClass.java` (right-click on the public class RunnerClass and select `Run "RunnerClass" with Coverage` or `Run "RunnerClass"`)
+
 ## Useful resources
 
 * https://itsadeliverything.com/declarative-vs-imperative-gherkin-scenarios-for-cucumber
