@@ -1,0 +1,280 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Get all the PETS",
+        "description": "",
+        "id": "pets-apis;get-all-the-pets",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2417883300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I want to know all the pets in the clinic",
+            "match": {
+              "location": "PetsStepDef.i_want_to_know_all_the_pets_in_the_clinic()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103449500,
+              "error_message": "java.lang.AssertionError: the amount of pets is 13 |  expected:\u003c13\u003e but was:\u003c16\u003e\r\n\tat org.junit.Assert.fail(Assert.java:89)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:835)\r\n\tat org.junit.Assert.assertEquals(Assert.java:647)\r\n\tat step_definitions.PetsStepDef.i_should_receive_pets(PetsStepDef.java:39)\r\n\tat ✽.Then I should receive 13 pets(pets.feature:6)\r\n",
+              "status": "failed"
+            },
+            "line": 6,
+            "name": "I should receive 13 pets",
+            "match": {
+              "location": "PetsStepDef.i_should_receive_pets()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@get_pets"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Add a new pet",
+        "description": "",
+        "id": "pets-apis;add-a-new-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 58978000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I have Owner and Pet details",
+            "match": {
+              "location": "PetsStepDef.i_have_Owner_and_Pet_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 334918900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should add a pet to owner",
+            "match": {
+              "location": "PetsStepDef.i_should_add_a_pet_to_owner()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@add_pet"
+          }
+        ]
+      }
+    ],
+    "name": "Pets APIs",
+    "description": "",
+    "id": "pets-apis",
+    "keyword": "Feature",
+    "uri": "pets.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 9,
+        "name": "Create a new vet",
+        "description": "",
+        "id": "vets-apis;create-a-new-vet;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18838000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have the specialties list",
+            "match": {
+              "location": "VetsStepDef.i_have_the_specialties_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37970200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should create a vet 0 \"Sarah\" \"Corner\" for each of the specialty",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 22
+                },
+                {
+                  "val": "Sarah",
+                  "offset": 25
+                },
+                {
+                  "val": "Corner",
+                  "offset": 33
+                }
+              ],
+              "location": "VetsStepDef.i_should_create_a_vet_for_each_of_the_specialty(int,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@create_vet"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Create a new vet",
+        "description": "",
+        "id": "vets-apis;create-a-new-vet;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23116900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have the specialties list",
+            "match": {
+              "location": "VetsStepDef.i_have_the_specialties_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37664000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should create a vet 1 \"Tom\" \"Hanks\" for each of the specialty",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 22
+                },
+                {
+                  "val": "Tom",
+                  "offset": 25
+                },
+                {
+                  "val": "Hanks",
+                  "offset": 31
+                }
+              ],
+              "location": "VetsStepDef.i_should_create_a_vet_for_each_of_the_specialty(int,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@create_vet"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Create a new vet",
+        "description": "",
+        "id": "vets-apis;create-a-new-vet;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22887900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have the specialties list",
+            "match": {
+              "location": "VetsStepDef.i_have_the_specialties_list()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40752000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I should create a vet 2 \"Jennifer\" \"Lawrence\" for each of the specialty",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 22
+                },
+                {
+                  "val": "Jennifer",
+                  "offset": 25
+                },
+                {
+                  "val": "Lawrence",
+                  "offset": 36
+                }
+              ],
+              "location": "VetsStepDef.i_should_create_a_vet_for_each_of_the_specialty(int,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@create_vet"
+          }
+        ]
+      }
+    ],
+    "name": "Vets APIs",
+    "description": "",
+    "id": "vets-apis",
+    "keyword": "Feature",
+    "uri": "vets.feature"
+  }
+]

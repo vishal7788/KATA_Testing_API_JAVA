@@ -9,16 +9,18 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.util.Map;
 
 public class SupportFunctions {
     private static Response response;
     private static ObjectMapper mapper = new ObjectMapper();
 
+
     public static String createFileLocationPath(String Json){
         return "src/test/resources/" + Json + ".json";
     }
 
-    public static ResponseBody post(String url, String json) {
+    public static ResponseBody post(String url, Map<String, Object> json) {
         response = RestAssured.given()
                 .header("content-type", MyConfig.CONTENT_TYPE)
                 .body(json)
